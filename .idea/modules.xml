@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/handwriting-ioc/handwriting-ioc.iml" filepath="$PROJECT_DIR$/handwriting-ioc/handwriting-ioc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-aop/spring-aop.iml" filepath="$PROJECT_DIR$/spring-aop/spring-aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-first/spring-first.iml" filepath="$PROJECT_DIR$/spring-first/spring-first.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-i18n/spring-i18n.iml" filepath="$PROJECT_DIR$/spring-i18n/spring-i18n.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-ioc-annotation/spring-ioc-annotation.iml" filepath="$PROJECT_DIR$/spring-ioc-annotation/spring-ioc-annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-ioc-xml/spring-ioc-xml.iml" filepath="$PROJECT_DIR$/spring-ioc-xml/spring-ioc-xml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-jdbc-tx/spring-jdbc-tx.iml" filepath="$PROJECT_DIR$/spring-jdbc-tx/spring-jdbc-tx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-junit/spring-junit.iml" filepath="$PROJECT_DIR$/spring-junit/spring-junit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-refelct/spring-refelct.iml" filepath="$PROJECT_DIR$/spring-refelct/spring-refelct.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-reflect/spring-reflect.iml" filepath="$PROJECT_DIR$/spring-reflect/spring-reflect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-resource/spring-resource.iml" filepath="$PROJECT_DIR$/spring-resource/spring-resource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-validator/spring-validator.iml" filepath="$PROJECT_DIR$/spring-validator/spring-validator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring6.iml" filepath="$PROJECT_DIR$/spring6.iml" />
+    </modules>
+  </component>
+</project>

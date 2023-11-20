@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="book" class="com.wpc.bean.di.Book">
+        <!--set注入-->
+        <property name="bname" value="前端开发"></property>
+        <property name="author" value="尚硅谷"></property>
+        <property name="others">
+            <value><![CDATA[A < B]]></value>
+        </property>
+    </bean>
+    <bean id="book1" class="com.wpc.bean.di.Book">
+        <constructor-arg name="bname" value="文城"></constructor-arg>
+        <constructor-arg name="author" value="余华"></constructor-arg>
+        <constructor-arg name="others">
+            <null/>
+        </constructor-arg>
+    </bean>
+</beans>

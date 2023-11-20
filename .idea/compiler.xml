@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-validator" />
+        <module name="spring-jdbc-tx" />
+        <module name="spring-i18n" />
+        <module name="spring-junit" />
+        <module name="spring-ioc-annotation" />
+        <module name="spring-aop" />
+        <module name="spring-ioc-xml" />
+        <module name="spring-first" />
+        <module name="spring-refelct" />
+        <module name="handwriting-ioc" />
+        <module name="spring-resource" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="handwriting-ioc" target="1.8" />
+      <module name="spring-aop" target="1.8" />
+      <module name="spring-first" target="1.8" />
+      <module name="spring-i18n" target="1.8" />
+      <module name="spring-ioc-annotation" target="1.8" />
+      <module name="spring-ioc-xml" target="1.8" />
+      <module name="spring-jdbc-tx" target="1.8" />
+      <module name="spring-junit" target="1.8" />
+      <module name="spring-refelct" target="1.8" />
+      <module name="spring-resource" target="1.8" />
+      <module name="spring-validator" target="1.8" />
+      <module name="spring6" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

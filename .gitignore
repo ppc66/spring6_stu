@@ -1,0 +1,12 @@
+# Project exclude paths
+/handwriting-ioc/target/
+/spring-aop/target/
+/spring-first/target/
+/spring-i18n/target/
+/spring-ioc-annotation/target/
+/spring-ioc-xml/target/
+/spring-jdbc-tx/target/
+/spring-junit/target/
+/spring-refelct/target/
+/spring-resource/target/
+/spring-validator/target/

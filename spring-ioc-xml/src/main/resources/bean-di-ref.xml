@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/util/spring-util.xsd
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       https://www.springframework.org/schema/context/spring-context.xsd">
+    <!--p命名空间的注入-->
+    <bean id="student1" class="com.wpc.bean.di.dimap.Student"
+    p:sid="100" p:sname="mary" p:lessonList-ref="lessonList" p:teacherMap-ref="teacherMap"
+    ></bean>
+
+
+    <!--
+        1、创建三个对象
+        2、注入普通类型属性
+        3、使用unit:类型属性 定义
+        4、在学生bean引入unit:类型定义bean，完成list、map类型属性注入
+    -->
+    <bean id="student" class="com.wpc.bean.di.dimap.Student">
+        <property name="sname" value="lucy"></property>
+        <property name="sid" value="1"></property>
+        <!--注入list和map-->
+        <property name="lessonList" ref="lessonList"></property>
+        <property name="teacherMap" ref="teacherMap"></property>
+    </bean>
+
+    <util:list id="lessonList">
+        <ref bean="lesson1"></ref>
+        <ref bean="lesson2"></ref>
+        <ref bean="lesson3"></ref>
+    </util:list>
+    <util:map id="teacherMap">
+        <entry>
+            <key>
+                <value>10010</value>
+            </key>
+            <ref bean="teacher1"></ref>
+        </entry>
+        <entry>
+            <key>
+                <value>10011</value>
+            </key>
+            <ref bean="teacher2"></ref>
+        </entry>
+        <entry>
+            <key>
+                <value>100102</value>
+            </key>
+            <ref bean="teacher3"></ref>
+        </entry>
+    </util:map>
+
+
+    <bean id="lesson1" class="com.wpc.bean.di.dimap.Lesson">
+        <property name="lessonName" value="java开发"></property>
+    </bean>
+    <bean id="lesson2" class="com.wpc.bean.di.dimap.Lesson">
+        <property name="lessonName" value="前端开发"></property>
+    </bean>
+    <bean id="lesson3" class="com.wpc.bean.di.dimap.Lesson">
+        <property name="lessonName" value="后端开发"></property>
+    </bean>
+    <bean id="teacher1" class="com.wpc.bean.di.dimap.Teacher">
+        <property name="sname" value="张三讲师"></property>
+        <property name="tid" value="001"></property>
+    </bean>
+    <bean id="teacher2" class="com.wpc.bean.di.dimap.Teacher">
+        <property name="sname" value="李四讲师"></property>
+        <property name="tid" value="002"></property>
+    </bean>
+    <bean id="teacher3" class="com.wpc.bean.di.dimap.Teacher">
+        <property name="sname" value="王五讲师"></property>
+        <property name="tid" value="003"></property>
+    </bean>
+
+</beans>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+        创建两个对象
+    -->
+    <bean id="teacher1" class="com.wpc.bean.di.dimap.Teacher">
+        <property name="tid" value="100"></property>
+        <property name="sname" value="讲师1"></property>
+    </bean>
+    <bean id="teacher2" class="com.wpc.bean.di.dimap.Teacher">
+        <property name="tid" value="101"></property>
+        <property name="sname" value="讲师2"></property>
+    </bean>
+    <bean id="student" class="com.wpc.bean.di.dimap.Student">
+        <property name="sid" value="1"></property>
+        <property name="sname" value="zhangsan"></property>
+        <property name="teacherMap">
+            <map>
+                <entry>
+                    <key>
+                        <value>10010</value>
+                    </key>
+                    <ref bean="teacher1"></ref>
+                </entry>
+                <entry>
+                    <key>
+                        <value>10086</value>
+                    </key>
+                    <ref bean="teacher2"></ref>
+                </entry>
+            </map>
+        </property>
+    </bean>
+</beans>
